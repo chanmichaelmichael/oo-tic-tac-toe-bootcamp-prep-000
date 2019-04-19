@@ -104,7 +104,7 @@ class TicTacToe
 
   def winner(board)
     if won?.class == Array
-      return board[won?(board)[0]]
+      return @board[won?[0]]
     else
       return nil
     end
