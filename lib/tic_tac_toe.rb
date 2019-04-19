@@ -48,13 +48,13 @@ class TicTacToe
   end
   
   def turn_count(board)
-  count = 0
-  board.each do |space|
-    if space != "" && space != " "
-      count += 1
+    count = 0
+    board.each do |space|
+      if space != "" && space != " "
+        count += 1
+      end
     end
+    return count
   end
-  return count
-end
   
 end
