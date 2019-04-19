@@ -90,8 +90,8 @@ class TicTacToe
     @board.none? { |i| (i == " " || i == "") }
   end
   
-  def draw?(board)
-    if(full?(board) && won?(board).class != Array)
+  def draw?
+    if(full? && won?.class != Array)
       return TRUE
     else
       return FALSE
