@@ -18,7 +18,7 @@ class TicTacToe
     i = i - 1
   end
   
-  def move(board,i,token)
+  def move(i,token)
     board[i]=token
   end
 end
