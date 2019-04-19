@@ -58,33 +58,33 @@ class TicTacToe
   end
   
   def current_player(board)
-  count = turn_count(board)
-  count%2 == 0? "X" : "O"
-end
+    count = turn_count(board)
+    count%2 == 0? "X" : "O"
+  end
 
-def won?(board)
-  win = FALSE
-  x_pos = []
-  o_pos = []
+  def won?(board)
+    win = FALSE
+    x_pos = []
+    o_pos = []
   
-  for i in 0..8 do
-    if board[i] == "X"
-      x_pos << i
-    elsif board[i] == "O"
-      o_pos << i
+    for i in 0..8 do
+      if board[i] == "X"
+        x_pos << i
+      elsif board[i] == "O"
+        o_pos << i
+      end
     end
-  end
   
-  WIN_COMBINATIONS.each do |combo|
-    if (x_pos.include?(combo[0]) && x_pos.include?(combo[1]) && x_pos.include?(combo[2]))
-      win = TRUE
-      return combo
-    elsif (o_pos.include?(combo[0]) && o_pos.include?(combo[1]) && o_pos.include?(combo[2]))
-      win = TRUE
-      return combo
+    WIN_COMBINATIONS.each do |combo|
+      if (x_pos.include?(combo[0]) && x_pos.include?(combo[1]) && x_pos.include?(combo[2]))
+        win = TRUE
+        return combo
+      elsif (o_pos.include?(combo[0]) && o_pos.include?(combo[1]) && o_pos.include?(combo[2]))
+        win = TRUE
+        return combo
+      end
     end
+    return win
   end
-  return win
-end
   
 end
