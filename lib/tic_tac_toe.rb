@@ -120,7 +120,7 @@ class TicTacToe
       puts "Cat's Game!"
       return
     else
-      puts "Congratulations #{winner(board)}!"
+      puts "Congratulations #{winner}!"
       return
     end
   end
