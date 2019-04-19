@@ -117,12 +117,13 @@ class TicTacToe
   
 
     if draw?(board)
-        puts "Cat's Game!"
-        return
-      else
-        puts "Congratulations #{winner(board)}!"
-        return
-      end
+      puts "Cat's Game!"
+      return
+    else
+      puts "Congratulations #{winner(board)}!"
+      return
+    end
+
 end
   
 end
