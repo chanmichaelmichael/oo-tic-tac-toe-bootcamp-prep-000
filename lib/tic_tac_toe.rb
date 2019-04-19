@@ -116,7 +116,7 @@ class TicTacToe
     end
   
 
-    if draw?(board)
+    if draw?
       puts "Cat's Game!"
       return
     else
