@@ -54,7 +54,7 @@ class TicTacToe
         count += 1
       end
     end
-    @turn_count = count
+    return count
   end
   
   def current_player
