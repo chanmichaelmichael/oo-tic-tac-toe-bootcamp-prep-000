@@ -40,7 +40,7 @@ class TicTacToe
     input = input_to_index(gets.chomp.strip)
     if valid_move?(input)
       move(input, token)
-      display_board(board)
+      display_board
       return board
     else
       turn(board)
