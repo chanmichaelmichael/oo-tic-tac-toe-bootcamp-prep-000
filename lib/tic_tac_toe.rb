@@ -41,9 +41,9 @@ class TicTacToe
     if valid_move?(input)
       move(input, token)
       display_board
-      return board
+      return @board
     else
-      turn(board)
+      turn
     end
   end
   
