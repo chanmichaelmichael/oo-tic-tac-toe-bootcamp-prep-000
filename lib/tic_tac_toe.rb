@@ -27,7 +27,7 @@ class TicTacToe
   end
   
   def valid_move?(i)
-    if i.between?(0,8) && (board[i] == "" || board[i] == " ")
+    if i.between?(0,8) && (@board[i] == "" || @board[i] == " ")
       TRUE
     else
       FALSE
