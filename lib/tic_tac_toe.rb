@@ -62,15 +62,15 @@ class TicTacToe
     count%2 == 0? "X" : "O"
   end
 
-  def won?(board)
+  def won?
     win = FALSE
     x_pos = []
     o_pos = []
   
     for i in 0..8 do
-      if board[i] == "X"
+      if @board[i] == "X"
         x_pos << i
-      elsif board[i] == "O"
+      elsif @board[i] == "O"
         o_pos << i
       end
     end
