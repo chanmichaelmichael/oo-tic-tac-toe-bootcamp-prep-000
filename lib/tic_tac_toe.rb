@@ -114,7 +114,6 @@ class TicTacToe
     while !over? && !won? do
       turn
     end
-  
 
     if draw?
       puts "Cat's Game!"
