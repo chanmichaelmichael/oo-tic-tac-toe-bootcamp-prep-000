@@ -87,7 +87,7 @@ class TicTacToe
   end
   
   def full?
-    board.none? { |i| (i == " " || i == "") }
+    @board.none? { |i| (i == " " || i == "") }
   end
   
 end
