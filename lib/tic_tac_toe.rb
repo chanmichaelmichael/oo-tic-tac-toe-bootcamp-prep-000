@@ -34,7 +34,7 @@ class TicTacToe
     end
   end
   
-  def turn(board)
+  def turn()
     token = current_player(board)
     puts "Please enter 1-9:"
     input = input_to_index(gets.chomp.strip)
