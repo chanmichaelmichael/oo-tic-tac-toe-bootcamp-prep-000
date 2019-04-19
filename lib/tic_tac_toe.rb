@@ -21,4 +21,6 @@ class TicTacToe
   def move(i,token)
     @board[i]=token
   end
+  
+  
 end
