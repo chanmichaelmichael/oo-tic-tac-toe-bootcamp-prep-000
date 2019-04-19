@@ -91,23 +91,23 @@ class TicTacToe
   end
   
   def draw?(board)
-  if(full?(board) && won?(board).class != Array)
-    return TRUE
-  else
-    return FALSE
+    if(full?(board) && won?(board).class != Array)
+      return TRUE
+    else
+      return FALSE
+    end
   end
-end
-
-def over?(board)
-  return (draw?(board) || won?(board).class == Array)
-end
-
-def winner(board)
-  if won?(board).class == Array
-    return board[won?(board)[0]]
-  else
-    return nil
+  
+  def over?(board)
+    return (draw?(board) || won?(board).class == Array)
   end
-end
+
+  def winner(board)
+    if won?.class == Array
+      return board[won?(board)[0]]
+    else
+      return nil
+    end
+  end
   
 end
