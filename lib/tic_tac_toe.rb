@@ -102,7 +102,7 @@ class TicTacToe
     return (draw?(board) || won?(board).class == Array)
   end
 
-  def winner(board)
+  def winner
     if won?.class == Array
       return @board[won?[0]]
     else
