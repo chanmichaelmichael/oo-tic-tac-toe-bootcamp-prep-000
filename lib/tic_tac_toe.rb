@@ -123,7 +123,6 @@ class TicTacToe
       puts "Congratulations #{winner(board)}!"
       return
     end
-
-end
+  end
   
 end
