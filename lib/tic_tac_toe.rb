@@ -86,4 +86,8 @@ class TicTacToe
     return win
   end
   
+  def full?
+    board.none? { |i| (i == " " || i == "") }
+  end
+  
 end
