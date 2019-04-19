@@ -98,8 +98,8 @@ class TicTacToe
     end
   end
   
-  def over?(board)
-    return (draw?(board) || won?(board).class == Array)
+  def over?
+    return (draw? || won?.class == Array)
   end
 
   def winner
